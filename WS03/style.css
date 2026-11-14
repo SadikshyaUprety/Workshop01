@@ -61,7 +61,65 @@ table {
       cursor: pointer;
       width: 100px;
     }
+    .transition-button {
+        background-color: lightblue;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: blue;
+      }
+      .animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: lightgreen;
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
     
     input[type="submit"]:hover {
       background-color: #45a049;
     }
+    .pseudo-list li:nth-child(odd) {
+        background-color: violet;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: goldenrod;
+      }
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+        width: 200px;
+        height: auto;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+      .quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: 'Tihar';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: red;
+      }
