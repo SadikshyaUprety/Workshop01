@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ==========================================
+   Task 4: Responsive Navigation Bar CSS
+   ========================================== */
+.responsive-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8b0000;
+  color: white;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.responsive-nav .nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.responsive-nav .nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* ==========================================
+   Task 3: Use Media Queries CSS
+   ========================================== */
+.media-query-box {
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+  .media-query-box {
+    background-color: lightcoral; /* Mobile background */
+    color: white;
+  }
+}
+
+@media (min-width: 601px) {
+  .media-query-box {
+    background-color: lightblue; /* Desktop background */
+    color: #333;
+  }
+}
+
+/* ==========================================
+   Task 1: Create a Responsive Layout CSS
+   ========================================== */
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.column h3 {
+  color: #8b0000;
+  margin-bottom: 10px;
+}
+
+.column p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%; /* Single column on smaller screens */
+  }
+}
+
+/* ==========================================
+   Task 2: Add a Responsive Image CSS
+   ========================================== */
+.responsive-image {
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Mobile adjustments for Task 4 Navbar */
+@media (max-width: 600px) {
+  .responsive-nav {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .responsive-nav .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    gap: 10px;
+  }
+
+  .responsive-nav .nav-list.active {
+    display: flex;
+  }
+}
