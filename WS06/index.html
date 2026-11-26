@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Days of Tihar - Bootstrap</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Days of Tihar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home" class="container my-4">
+
+    <div class="alert alert-warning text-center" role="alert">
+      🪔 तिहारको हार्दिक मंगलमय शुभकामना! 🪔 — Resize the window to see the responsive Bootstrap layout.
+    </div>
+
+    <section id="about" class="mb-5">
+      <h1 class="mb-3">Tihar Highlights (Grid Layout)</h1>
+      <div class="row g-3">
+        <div class="col-md-4 col-12">
+          <div class="p-3 border rounded bg-light h-100">
+            <h2>काग तिहार</h2>
+            <p class="mb-0">काग तिहारको दिनमा कागको मीठो बोली जस्तै हजुरको जीवनमा सधैँ मिठास र खुसी छाओस्। शुभ तिहार!</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="p-3 border rounded bg-light h-100">
+            <h3>कुकुर तिहार</h3>
+            <p class="mb-0">कुकुर तिहारको दिनमा कुकुरको निष्ठा र प्रेम जस्तै हजुरको जीवनमा सधैँ प्रेम, निष्ठा र खुशी रहोस्। शुभ तिहार!</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="p-3 border rounded bg-light h-100">
+            <h4>गाई तिहार</h4>
+            <p class="mb-0">माता लक्ष्मीको रूप मानिने गाई तिहारको पवित्र अवसरमा हजुरको घरमा सधैँ धनधान्य र सुख-समृद्धि बास रहोस्। शुभ तिहार!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="mb-3">Festive Actions (Buttons)</h2>
+      <div class="d-flex flex-wrap gap-2">
+        <button type="button" class="btn btn-primary">लक्ष्मी पूजा</button>
+        <button type="button" class="btn btn-secondary">भाइटीका</button>
+        <button type="button" class="btn btn-success">शुभकामना पठाउनुहोस्</button>
+        <button type="button" class="btn btn-warning">थप विवरण</button>
+      </div>
+    </section>
+
+    <section id="contact" class="mb-5">
+      <h2 class="mb-3">Featured Tihar Cards</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-12">
+          <div class="card h-100">
+            <img src="https://exploreallaboutnepal.com/wp-content/uploads/2025/10/Kaag-Tihar-Crows-Worshipping-Festival-in-Nepal-3.jpg" class="card-img-top tihar-card-img" alt="काग तिहार">
+            <div class="card-body">
+              <h2 class="card-title">काग तिहार</h2>
+              <p class="card-text">काग तिहारको दिनमा कागको मीठो बोली जस्तै हजुरको जीवनमा सधैँ मिठास र खुसी छाओस्। शुभ तिहार!</p>
+              <a href="#" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+          <div class="card h-100">
+            <img src="https://c.ndtvimg.com/2026-11/putvqimk_lakshmi-puja-muhurat-timings-for-diwali-2026-photo-pexels_625x300_08_November_26.jpg?im=FaceCrop,algorithm=dnn,width=1600,height=900" class="card-img-top tihar-card-img" alt="लक्ष्मी पूजा">
+            <div class="card-body">
+              <h2 class="card-title">लक्ष्मी पूजा</h2>
+              <p class="card-text">माता लक्ष्मीको कृपाले हजुरको घरमा सधैं सुख, शान्ति र समृद्धि रहोस्।</p>
+              <a href="#" class="btn btn-success">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+          <div class="card h-100">
+            <img src="https://voiceofsikkim.com/wp-content/uploads/2025/10/Bhai-tika-nepali-culture-01.jpg" class="card-img-top tihar-card-img" alt="भाइटीका">
+            <div class="card-body">
+              <h2 class="card-title">भाइटीका</h2>
+              <p class="card-text">दाजुभाइ र दिदीबहिनीको अटुट प्रेम सधैं अमर रहोस्। शुभ तिहार!</p>
+              <a href="#" class="btn btn-secondary">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Contact" class="mb-5">
+  <h2 class="mb-3">Contact &amp; Greetings</h2>
+  <div class="p-4 border rounded bg-light">
+    <p class="mb-2">Have festive wishes or feedback about Days of Tihar?</p>
+    <p class="mb-0 text-muted">Email: nepalipeople@daysoftihar.example</p>
+  </div>
+</section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
